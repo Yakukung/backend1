@@ -1,0 +1,17 @@
+<p>tests works!</p>
+<button (click)="getAllTrips()">test</button>
+
+<input type="text" #id>
+<button (click)="getTripsById(id)">SendID</button>
+
+<input type="text" #email>
+<input type="text" #password>
+<button (click)="getSignIn(email.value, password.value)">SendID</button>
+
+<div class="container">
+    <div *ngFor="let item of show">
+        <h1>{{item.first_name}}</h1>
+        <p>{{item.email}}</p>
+        <p>{{item.password}}</p>
+    </div>
+</div>
